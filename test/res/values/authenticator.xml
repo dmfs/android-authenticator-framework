@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Supported authenticator schemes. Add one item for each scheme here and add the handler class at the same index in org_dmfs_android_authenticator_auth_scheme_handlers below. -->
+    <string-array name="org_dmfs_android_authenticator_auth_schemes">
+        <item>password</item>
+        <item>anonymous</item>
+    </string-array>
+
+    <!-- Fully qualified names of classes that handle the auth scheme at the same index in org_dmfs_android_authenticator_auth_schemes. -->
+    <string-array name="org_dmfs_android_authenticator_auth_scheme_handlers">
+        <item>org.dmfs.android.authenticator.Password</item>
+        <item>org.dmfs.android.authenticator.Anonymous</item>
+    </string-array>
+
+    <!-- The fully qualified name of the obfuscator class to use. If no obfuscator class has been supplied any call to Obfuscater.INSTANCE will throw a RuntimeException. -->
+    <string name="org_dmfs_android_authenticator_obfuscater_provider">don\'t forget to set org_dmfs_android_authenticator_obfuscater_provider in the resources</string>
+
+    <!-- Label for the anonymous auth token type -->
+    <string name="org_dmfs_android_authenticator_authtoken_label_anonymous">Anonymous</string>
+
+    <!-- Label for the password auth token type -->
+    <string name="org_dmfs_android_authenticator_authtoken_label_password">Credentials</string>
+
+</resources>
